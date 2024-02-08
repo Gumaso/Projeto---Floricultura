@@ -1,18 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter&family=Protest+Strike&family=Roboto&family=Satisfy&family=Ubuntu&display=swap');
 
 :root{
     --cor-primaria: #12372A;
     --cor-secundaria: #436850;
     --cor-terciaria: #ADBC9F;
-    --cor-quartenaria: #FBFADA;
+    --fonte-primaria: 'Protest Strike', sans-serif;
+    --fonte-secundaria:'Roboto', sans-serif;
+
+
+}
+@font-face {
+    font-family: 'wild nature';
+    src: url('./fontes/SilverForteGrungeGrunge-7A7B.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
 }
 *{
     margin: 0;
     padding: 0;
 }
 body{
+    background-color: #FBFADA;
     height: 100vh;
+    box-sizing: border-box;
     
 }
-main{
+/*PARTE DO CABEÇALHO*/
+header{
+    display: flex;
+    align-items: center;
+    background-color: var(--cor-primaria);
+    height: 10%;
+    width: 100%;
+}
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    gap: 40px;
+}
+/*PARTE DO MEIO*/
 
+main{
+    background-color: #FBFADA;
+    height: 65%;
+}
+#descricao_loja{
+  
+
+    font-size: 24px;
+    font-weight: 400;
+    margin: 4%;
+}
+section{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    background-color: var(--cor-terciaria);
+    height: 15%;
+}
+h1{
+    font-family: 'wild nature';
+    font-size: 32px;
+}
+/*PARTE DE BAIXO*/
+
+footer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--cor-primaria);
+    height: 10%;
+    gap: 26px;
+
+
+}
+
+h3{
+    font-weight: 600;
+    font-size: 24px;
+    font-family: var(--fonte-secundaria);
+}
+a{
+    text-decoration: none;
+    font-family: var(--fonte-primaria);
+    font-size: 24px;
+    color: white;
+}
+a:hover{
+    color: #FBFADA;
+}
+#desenvolvido{
+    font-family: var(--fonte-primaria);
+    font-weight: 200;
+    font-size: 24px;
 }
