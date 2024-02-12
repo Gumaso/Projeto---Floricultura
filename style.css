@@ -38,14 +38,14 @@ h1{
     font-size: 32px;
 }
 /*PARTE DO CABEÇALHO*/
-header{
+#cabecalho{
     display: flex;
     align-items: center;
     background-color: var(--cor-primaria);
     height: 10%;
     width: 100%;
 }
-nav{
+#menu{
     display: flex;
     align-items: center;
     justify-content: center;
@@ -96,7 +96,7 @@ img{
 
 /*PARTE DE BAIXO*/
 
-footer{
+#rodape{
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -139,6 +139,7 @@ a:hover{
 }
 #imagem_fundo{
     height: 100%;
+    width: 100%;
     border-radius: 50px;
 }
 #entrada_dados{
@@ -203,8 +204,8 @@ textarea:focus{
     color: white;
 }
 #botao_enviar{
-    background-color: var(--cor-primaria);
-    border: none;
+    background-color: #12372a00;
+    border: 2px var(--cor-terciaria) solid ;
     color: white;
     height: 5%;
     border-radius: 8px;
@@ -212,6 +213,7 @@ textarea:focus{
 }
 #botao_enviar:hover{
     cursor: pointer;
+    background-color: #12372a92;
     box-shadow: 2px 5px 25px 5px var(--cor-terciaria);
 }
 #icones_redes_sociais{
