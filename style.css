@@ -64,8 +64,18 @@ nav{
     background-color: #FBFADA;
 }
 #main_produtos{
-    height: 70%;
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    grid-template-rows: auto auto;
+    height: 60%;
+    margin: 2.5%;
+    gap: 2%;
     background-color: #FBFADA;
+}
+img{
+    width: 290px;
+    height: 174px;
+    border-radius: 42px;
 }
 #main_entre_contato{
     background-image: url('/assets/entrada2.jpg');
@@ -206,4 +216,20 @@ textarea:focus{
 }
 #icones_redes_sociais{
     margin-top: 10%;
+}
+.link_plantas{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+.texto_link_plantas{
+    color: #12372A;
+    font-size: 16px;
+    border-bottom: #12372A 2px solid;
+    
+}
+.texto_link_plantas:hover{
+    color: var(--cor-secundaria);
+    border-bottom: var(--cor-secundaria) 2px solid;
 }
