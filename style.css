@@ -25,6 +25,7 @@ body{
     box-sizing: border-box;
     
 }
+/*ESTILIZAÇÃO GERAL*/
 #nome_empresa{
     display: flex;
     flex-direction: column;
@@ -33,9 +34,22 @@ body{
     background-color: var(--cor-terciaria);
     height: 15%;
 }
+#nome_empresa_produtos{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    background-color: var(--cor-terciaria);
+    height: 10%;
+}
 h1{
     font-family: 'wild nature';
     font-size: 32px;
+}
+img{
+    width: 290px;
+    height: 204px;
+    border-radius: 42px;
 }
 /*PARTE DO CABEÇALHO*/
 #cabecalho{
@@ -52,14 +66,8 @@ h1{
     width: 100%;
     gap: 40px;
 }
-/*PARTE DO MEIO*/
-
-
+/*ESTILIZAÇÃO DOS MAINS */
 #main_sobre{
-    height: 70%;
-    background-color: #FBFADA;
-}
-#main_home{
     height: 70%;
     background-color: #FBFADA;
 }
@@ -67,15 +75,10 @@ h1{
     display: grid;
     grid-template-columns: auto auto auto auto;
     grid-template-rows: auto auto;
-    height: 60%;
+    height: 80%;
     margin: 2.5%;
     gap: 2%;
     background-color: #FBFADA;
-}
-img{
-    width: 290px;
-    height: 174px;
-    border-radius: 42px;
 }
 #main_entre_contato{
     background-image: url('/assets/entrada2.jpg');
@@ -84,7 +87,9 @@ img{
     background-color: #FBFADA;
     height: 1000px;
     display: flex;
+    
 }
+/*FIM DA ESTILIZAÇÃO DOS MAINS */
 #descricao_loja{
     text-align: justify;
     text-indent: 30px; /* Ajuste conforme necessário */
@@ -92,10 +97,7 @@ img{
     font-weight: 400;
     margin: 4%;
 }
-
-
 /*PARTE DE BAIXO*/
-
 #rodape{
     display: flex;
     flex-direction: column;
@@ -105,7 +107,15 @@ img{
     height: 10%;
     gap: 26px;
 }
-
+#rodape_produtos{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--cor-primaria);
+    height: 5%;
+    gap: 26px;
+}
 h3{
     font-weight: 600;
     font-size: 24px;
@@ -126,10 +136,10 @@ a:hover{
     font-weight: 200;
     font-size: 24px;
 }
-
-
+/*ESTILIZAÇÃO PAGINA ENTRE EM CONTATO*/
 #entre_contato{
-    
+    box-sizing: border-box;
+    justify-content: center;
     margin: 7% 0% 7% 7%;
     width: 50%;
     height: 80%;
@@ -148,15 +158,13 @@ a:hover{
     height: 80%;
     gap: 16px;
 }
-
 #div_imagem{
     margin: 7% 7% 7%;
     width: 50%;
     height: 80%;
     padding: 20px 20px 0px 20px;
 }
-
-input{
+.entrada_texto_barra{
     resize: none;
     border: solid var(--cor-terciaria) 2px;
     border-radius: 8px;
@@ -165,7 +173,7 @@ input{
     font-family: var(--fonte-secundaria);
     font-size: 16px;
 }
-textarea{
+.entrada_texto_email{
     resize: none;
     border: solid var(--cor-terciaria) 2px;
     border-radius: 8px;
@@ -176,20 +184,20 @@ textarea{
 
 
 }
-textarea::placeholder{
+.entrada_texto_email::placeholder{
     color: var(--cor-terciaria);
 }
-input::placeholder{
+.entrada_texto_barra::placeholder{
     color: var(--cor-terciaria);
 }
-input:focus{
+.entrada_texto_barra:focus{
     outline: none;
     border: 2px var(--cor-terciaria) ;
     box-shadow: 2px 5px 25px 2px var(--cor-terciaria);
 
 
 }
-textarea:focus{
+entrada_texto_email:focus{
     outline: none;
     border: 2px var(--cor-terciaria) ;
     box-shadow: 2px 5px 25px 5px var(--cor-terciaria);
@@ -217,21 +225,135 @@ textarea:focus{
     box-shadow: 2px 5px 25px 5px var(--cor-terciaria);
 }
 #icones_redes_sociais{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 80%;
     margin-top: 10%;
+    margin-right: 10%;
+    margin-left: 10%;
+}
+/* FIM DA ESTILIZAÇÃO PAGINA ENTRE EM CONTATO*/
+/*ESTILIZAÇÃO DA PAGINA PRODUTOS*/
+#botoes_produtos{
+    grid-column-start: 2;
+    grid-column-end: 4;
+    display: flex;
+    justify-content: space-around;
+    margin-top: 4%;
+}
+.botoes_pagina_plantas{
+    background-color: #436850;
+    width: 160px;
+    height: 40px;
+    border-radius: 15px;
+    border: #436850 2px solid;
+
+
+}
+.botoes_pagina_plantas:hover{
+    transition: all 0.2s ease-in-out;
+    width: 170px;
+    height: 50px;
+    
 }
 .link_plantas{
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin-top: 40px;
     
 }
 .texto_link_plantas{
     color: #12372A;
     font-size: 16px;
     border-bottom: #12372A 2px solid;
+    margin-top: 5%;
     
 }
 .texto_link_plantas:hover{
     color: var(--cor-secundaria);
     border-bottom: var(--cor-secundaria) 2px solid;
+}
+.link_imagem:hover{
+    transform: scale(1.075);
+    cursor: pointer;
+}
+/*FIM DA ESTILIZAÇÃO DA PAGINA PRODUTOS*/
+/*ESTILIZAÇÃO CARROSSEL*/
+.img_index{
+    width: 700px;
+    height: 600px;
+}
+#slider{
+    margin: 0 auto;
+    padding: 0 !important;
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+}
+#slider_conteudo{
+    width: 400%;
+    height: auto;
+    display: flex;
+}
+/*
+#slider_conteudo input{
+display: none;
+}
+
+*/
+.slide_box{
+    width: 25%;
+    height: auto;
+    position: relative;
+    text-align: center;
+}
+.slide_box img{
+    width: 100%;
+}
+/*INPUTS RADIO*/
+.navegacao_manual, .navegacao_auto{
+    display: flex;
+    position: absolute;
+    width: 100%;
+    margin-top: 40%;
+    justify-content: center;
+}
+.navegacao_manual .manual_btn, .navegacao_auto div{
+    border: 2px var(--cor-primaria) solid;
+    padding: 10px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+
+.navegacao_manual .manual_btn:not(:last-child), .navegacao_auto div:not(:last-child){
+    margin-right: 15px;
+}
+.navegacao_manual .manual_btn:hover{
+    background-color: #12372A;
+    transition: 0.3s;
+}
+
+
+#radio1:checked ~ .navegacao_auto .botao_navegacao_auto1{
+    background-color: #12372A;
+}
+#radio2:checked ~ .navegacao_auto .botao_navegacao_auto2{
+    background-color: #12372A;
+}
+#radio3:checked ~ .navegacao_auto .botao_navegacao_auto3{
+    background-color: #12372A;
+}
+
+
+#radio1:checked ~ .primeiro{
+    margin-left: 0;
+}
+#radio2:checked ~ .primeiro{
+    margin-left: -25%;
+}
+#radio3:checked ~ .primeiro{
+    margin-left: -50%;
 }

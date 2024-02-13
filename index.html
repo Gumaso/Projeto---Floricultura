@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="style.css">
+    <script src="app.js" defer></script>
     <title>AmazonBrasa Plantas</title>
     <style>
         @font-face {
@@ -27,10 +28,34 @@
     <section id="nome_empresa">
         <h1>AmazonBrasa Plantas</h1>
     </section>
-    <main id="main_home">
+    <main id="slider">
+        <div id="slider_conteudo">
+            <input type="radio" name="btn_radio" id="radio1">
+            <input type="radio" name="btn_radio" id="radio2">
+            <input type="radio" name="btn_radio" id="radio3">
+            
+            <div class="slide_box primeiro">
+                <img class="img_index" src="/assets/img1.png" alt="">
+            </div>
+            <div class="slide_box">
+                <img class="img_index" src="/assets/img2.png" alt="">
+            </div>
+            <div class="slide_box">
+                <img class="img_index" src="/assets/img3.png" alt="">
+            </div>
+
+            <div class="navegacao_auto">
+                <div class="botao_navegacao_auto1"></div>
+                <div class="botao_navegacao_auto2"></div>
+                <div class="botao_navegacao_auto3"></div>
+            </div>
+
+            <div class="navegacao_manual">
+                <label for="radio1" class="manual_btn"></label>
+                <label for="radio2" class="manual_btn"></label>
+                <label for="radio3" class="manual_btn"></label>
+            </div>
+        </div>
     </main>
-    <footer id="rodape">
-        <h3>Obrigado por preferir a  <span style="font-family: wild nature;font-size: 16px; color: black;"> AmazonBrasa Plantas</span></h3>
-    </footer>
 </body>
 </html>
