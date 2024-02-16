@@ -116,6 +116,8 @@ img{
     height: 5%;
     gap: 26px;
 }
+
+
 h3{
     font-weight: 600;
     font-size: 24px;
@@ -165,22 +167,26 @@ a:hover{
     padding: 20px 20px 0px 20px;
 }
 .entrada_texto_barra{
+    color: white;
+    font-size: 18px;
     resize: none;
     border: solid var(--cor-terciaria) 2px;
     border-radius: 8px;
     height: 7%;
     background-color: #12372a00;
     font-family: var(--fonte-secundaria);
-    font-size: 16px;
+    
 }
 .entrada_texto_email{
+    color: white;
+    font-size: 18px;
     resize: none;
     border: solid var(--cor-terciaria) 2px;
+    
     border-radius: 8px;
     height: 70%;
     background-color: #12372a00;
     font-family: var(--fonte-secundaria);
-    font-size: 16px;
 
 
 }
@@ -193,14 +199,14 @@ a:hover{
 .entrada_texto_barra:focus{
     outline: none;
     border: 2px var(--cor-terciaria) ;
-    box-shadow: 2px 5px 25px 2px var(--cor-terciaria);
+    box-shadow: 2px 5px 15px 2px var(--cor-terciaria);
 
 
 }
-entrada_texto_email:focus{
+.entrada_texto_email:focus{
     outline: none;
     border: 2px var(--cor-terciaria) ;
-    box-shadow: 2px 5px 25px 5px var(--cor-terciaria);
+    box-shadow: 2px 5px 15px 5px var(--cor-terciaria);
 }
 .icone{
     width: 50px;
@@ -281,15 +287,32 @@ entrada_texto_email:focus{
 }
 /*FIM DA ESTILIZAÇÃO DA PAGINA PRODUTOS*/
 /*ESTILIZAÇÃO CARROSSEL*/
+#rodape_produtos_home{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--cor-primaria);
+    height: 10%;
+    gap: 26px;
+}
+#nome_empresa_home{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    background-color: var(--cor-terciaria);
+    height: 10%;
+}
 .img_index{
     width: 700px;
     height: 600px;
 }
 #slider{
-    margin: 0 auto;
+    margin: 1% auto;
     padding: 0 !important;
     width: 100%;
-    height: auto;
+    height: 80%;
     overflow: hidden;
 }
 #slider_conteudo{
@@ -297,27 +320,28 @@ entrada_texto_email:focus{
     height: auto;
     display: flex;
 }
-/*
+
 #slider_conteudo input{
 display: none;
 }
 
-*/
+
 .slide_box{
     width: 25%;
     height: auto;
     position: relative;
     text-align: center;
+    transition: 1s;
 }
 .slide_box img{
-    width: 100%;
+    width: 80%;
 }
 /*INPUTS RADIO*/
 .navegacao_manual, .navegacao_auto{
     display: flex;
     position: absolute;
     width: 100%;
-    margin-top: 40%;
+    margin-top: 35.5%;
     justify-content: center;
 }
 .navegacao_manual .manual_btn, .navegacao_auto div{
